@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30days/font_scale.dart';
 import 'package:flutter_30days/flash_cards.dart';
+import 'package:flutter_30days/views/shopping_page.dart';
 
 void main() {
-  runApp(FlashCards());
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: ShoppingPage(),
+    );
+  }
 }
